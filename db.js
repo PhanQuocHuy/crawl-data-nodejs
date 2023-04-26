@@ -76,15 +76,15 @@ function createTopCVTable(db) {
                 CREATE TABLE IF NOT EXISTS topcv
                 (
                     url                 VARCHAR(250),
-                    image               VARCHAR(250),
                     name                VARCHAR(250),
+                    image               VARCHAR(250),
                     company_name        VARCHAR(250),
                     company_location    VARCHAR(500),
                     company_url         VARCHAR(250),
                     salary              VARCHAR(50),
-                    is_bulk             TINYINT(4) DEFAULT 0,
-                    english_require     TINYINT(4) DEFAULT 0,
-                    last_apply          DATE()
+                    is_bulk             INTEGER,
+                    english_require     INTEGER,
+                    last_apply          DATE
                 )
             `);
 }
